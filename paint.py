@@ -1,6 +1,6 @@
 from turtle import *
 from freegames import vector
-
+PI = 3.1416
 def line(start, end):
     "Draw line from start to end."
     up()
@@ -22,8 +22,19 @@ def square(start, end):
     end_fill()
 
 def circle(start, end):
-    "Draw circle from start to end."
-    pass  # TODO
+     "Se agrego el circulo"
+     up()
+     goto(start.x, start.y)
+     down()
+     begin_fill()
+    
+     circunferencia = (end.x - start.x) * PI
+     step = circunferencia / 36
+     for count in range(36):
+        forward(step)
+        left(10)
+     end_fill()
+
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
