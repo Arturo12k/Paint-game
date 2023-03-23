@@ -1,4 +1,5 @@
 "Editado por arturo.ojar@gmail.com"
+"Daniel estuvo aqui "
 from turtle import *
 from freegames import vector
 PI = 3.1416
